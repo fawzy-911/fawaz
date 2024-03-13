@@ -1,17 +1,18 @@
 import os
 import warnings
 warnings.simplefilter("ignore")
-import tensorflow as tf
-from tensorflow.keras.preprocessing.image import img_to_array
+#import tensorflow as tf
+#from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import load_model
 import numpy as np
-import cv2
+#import cv2
 
 
-from flask import Flask, render_template, render_template_string, request, redirect, url_for, abort
+from flask import Flask, render_template, request
+#, render_template_string, redirect, url_for, abort)
 from werkzeug.utils import secure_filename
-from os import listdir
+#from os import listdir
 
 app = Flask(__name__)
 
